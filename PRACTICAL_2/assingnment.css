@@ -1,0 +1,82 @@
+body {
+    background-color: lightyellow;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+.home {
+    color: royalblue;
+}
+
+.login {
+    color: seagreen;
+}
+
+.register {
+    color: crimson;
+}
+
+.dashboard {
+    color: darkviolet;
+}
+
+.profile {
+    color: saddlebrown;
+}
+
+.courses {
+    color: darkorange;
+}
+
+.assignments {
+    color: steelblue;
+}
+
+.announcements {
+    color: teal;
+}
+
+.timetable {
+    color: maroon;
+}
+
+.contact {
+    color: darkslategray;
+}
+
+h1 {
+    color: darkred;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    color: darkslategray;
+    width: 80%;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.header-row {
+    background-color: lightblue;
+}
+
+.row-green {
+    background-color: lightgreen;
+}
+
+.row-pink {
+    background-color: lightpink;
+}
+
+.row-blue {
+    background-color: lightcyan;
+}

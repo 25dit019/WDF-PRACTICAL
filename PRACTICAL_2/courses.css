@@ -1,0 +1,85 @@
+body {
+    background-color: lavender;
+    font-family: Arial;
+}
+
+.courses-title {
+    color: darkblue;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+.home {
+    color: royalblue;
+}
+
+.login {
+    color: seagreen;
+}
+
+.register {
+    color: crimson;
+}
+
+.dashboard {
+    color: darkviolet;
+}
+
+.profile {
+    color: saddlebrown;
+}
+
+.courses {
+    color: darkred;
+}
+
+.assignments {
+    color: steelblue;
+}
+
+.announcements {
+    color: teal;
+}
+
+.timetable {
+    color: maroon;
+}
+
+.contact {
+    color: darkslategray;
+}
+
+.available-courses {
+    color: darkviolet;
+    text-align: center;
+}
+
+.courses-table {
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border: 1px solid darkgray;
+    border-spacing: 0;
+}
+
+.courses-table th,
+.courses-table td {
+    padding: 10px;
+    border: 1px solid darkgray;
+}
+
+.table-header {
+    background-color: plum;
+}
+
+.alternate-row {
+    background-color: lavender;
+}
+
+.courses-footer {
+    text-align: center;
+    color: slategray;
+}

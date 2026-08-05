@@ -1,0 +1,85 @@
+body {
+    background-color: lightcyan;
+    font-family: Arial;
+}
+
+.timetable-title {
+    text-align: center;
+    color: navy;
+}
+
+nav {
+    text-align: center;
+}
+
+.home {
+    color: royalblue;
+}
+
+.login {
+    color: seagreen;
+}
+
+.register {
+    color: crimson;
+}
+
+.dashboard {
+    color: darkviolet;
+}
+
+.profile {
+    color: saddlebrown;
+}
+
+.courses {
+    color: darkorange;
+}
+
+.assignments {
+    color: steelblue;
+}
+
+.announcements {
+    color: teal;
+}
+
+.timetable {
+    color: navy;
+}
+
+.contact {
+    color: darkslategray;
+}
+
+.weekly-title {
+    text-align: center;
+    color: darkcyan;
+}
+
+.timetable-table {
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border: 1px solid gray;
+    border-spacing: 0;
+}
+
+.timetable-table th,
+.timetable-table td {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.table-header {
+    background-color: lightgreen;
+}
+
+.alternate-row {
+    background-color: lightyellow;
+}
+
+.timetable-footer {
+    text-align: center;
+    color: slategray;
+}
