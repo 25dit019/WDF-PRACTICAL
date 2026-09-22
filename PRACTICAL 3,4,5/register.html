@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register - StudentHub</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+<h1 class="register-title">
+    Student Registration
+</h1>
+
+<hr>
+
+<div class="nav">
+    <a href="index.html" class="home">Home</a> |
+    <a href="login.html" class="login">Login</a> |
+    <a href="register.html" class="register">Register</a> |
+    <a href="dashboard.html" class="dashboard">Dashboard</a> |
+    <a href="profile.html" class="profile">Profile</a> |
+    <a href="courses.html" class="courses">Courses</a> |
+    <a href="assignments.html" class="assignments">Assignments</a> |
+    <a href="announcements.html" class="announcements">Announcements</a> |
+    <a href="timetable.html" class="timetable">Timetable</a> |
+    <a href="contact.html" class="contact">Contact us</a>
+</div>
+
+<hr>
+
+<div class="register-container">
+
+<form class="register-form" id="registerForm" novalidate>
+
+<h2>
+    Student Registration Form
+</h2>
+
+<div class="form-group">
+    <label for="fullname"><b>Full Name</b></label>
+    <input type="text" class="input-field" id="fullname" name="fullname" placeholder="Enter full name (min 2 words / letters only)" value="Parthrajsinh H. Gohil">
+    <div class="error-msg" id="fullnameError"></div>
+</div>
+
+<div class="form-group">
+    <label for="email"><b>Email Address</b></label>
+    <input type="email" class="input-field" id="email" name="email" placeholder="Enter email address" value="25dit019@charusat.edu.in">
+    <div class="error-msg" id="emailError"></div>
+</div>
+
+<div class="form-group">
+    <label for="mobile"><b>Mobile Number</b></label>
+    <input type="tel" class="input-field" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number" value="9876543210">
+    <div class="error-msg" id="mobileError"></div>
+</div>
+
+<div class="form-group">
+    <label for="passwordField"><b>Password</b></label>
+    <input type="password" class="input-field" id="passwordField" name="password" placeholder="Min 6 chars (must include letters & numbers)" value="Pass123">
+    <div class="error-msg" id="passwordError"></div>
+</div>
+
+<div class="password-toggle">
+    <span class="eye-icon" id="eyeIcon" onclick="togglePasswordVisibility('passwordField')">👁️</span>
+    <input type="checkbox" id="showPasswordCheckbox" onchange="togglePasswordVisibility('passwordField')">
+    <label for="showPasswordCheckbox" class="checkbox-label">Show Password</label>
+</div>
+
+<div class="form-group">
+    <label for="confirmPasswordField"><b>Confirm Password</b></label>
+    <input type="password" class="input-field" id="confirmPasswordField" name="confirmpassword" placeholder="Re-enter password" value="Pass123">
+    <div class="error-msg" id="confirmPasswordError"></div>
+</div>
+
+<div class="password-toggle">
+    <span class="eye-icon" id="eyeIcon2" onclick="togglePasswordVisibility('confirmPasswordField')">👁️</span>
+    <input type="checkbox" id="showConfirmPasswordCheckbox" onchange="togglePasswordVisibility('confirmPasswordField')">
+    <label for="showConfirmPasswordCheckbox" class="checkbox-label">Show Password</label>
+</div>
+
+<div class="form-group">
+    <label for="course"><b>Select Course</b></label>
+    <select class="input-field select-field" id="course" name="course">
+        <option value="">-- Choose Course --</option>
+        <option value="Information Technology" selected>Information Technology</option>
+        <option value="Computer Engineering">Computer Engineering</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="AI & Machine Learning">AI & Machine Learning</option>
+        <option value="Data Science">Data Science</option>
+    </select>
+    <div class="error-msg" id="courseError"></div>
+</div>
+
+<div class="form-group">
+    <label for="year"><b>Select Academic Year</b></label>
+    <select class="input-field select-field" id="year" name="year">
+        <option value="">-- Choose Year --</option>
+        <option value="1st Year">1st Year</option>
+        <option value="2nd Year" selected>2nd Year</option>
+        <option value="3rd Year">3rd Year</option>
+        <option value="4th Year">4th Year</option>
+    </select>
+    <div class="error-msg" id="yearError"></div>
+</div>
+
+<div class="form-group">
+    <label><b>Gender</b></label>
+    <div class="radio-group">
+        <label class="radio-label"><input type="radio" name="gender" value="Male" checked> Male</label>
+        <label class="radio-label"><input type="radio" name="gender" value="Female"> Female</label>
+        <label class="radio-label"><input type="radio" name="gender" value="Other"> Other</label>
+    </div>
+    <div class="error-msg" id="genderError"></div>
+</div>
+
+<div class="form-group terms-group">
+    <label class="checkbox-container">
+        <input type="checkbox" id="terms" name="terms" checked>
+        <span class="checkbox-custom"></span>
+        I accept the terms and conditions
+    </label>
+    <div class="error-msg" id="termsError"></div>
+</div>
+
+<div class="button-group">
+    <button type="submit" class="register-button" id="registerBtn">Register</button>
+    <button type="reset" class="clear-button" id="clearBtn">Clear</button>
+</div>
+
+</form>
+
+</div>
+
+<hr>
+
+<p class="register-footer">
+    2026 StudentHub Portal | Registration
+</p>
+
+<script src="register.js"></script>
+</body>
+</html>

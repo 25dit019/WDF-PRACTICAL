@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ccfbf1, #f0fdf4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #0d9488, #0f766e);
+    padding: 30px 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(13, 148, 136, 0.25);
+    margin-bottom: 15px;
+    animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+hr {
+    display: none;
+}
+
+nav {
+    text-align: center;
+    padding: 14px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    margin-bottom: 25px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px 8px;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+nav a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.home { color: #0284c7; }
+.home:hover { color: white; background-color: #0284c7; }
+.login { color: #0d9488; }
+.login:hover { color: white; background-color: #0d9488; }
+.register { color: #e11d48; }
+.register:hover { color: white; background-color: #e11d48; }
+.dashboard { color: #9333ea; }
+.dashboard:hover { color: white; background-color: #9333ea; }
+.profile { color: #d97706; }
+.profile:hover { color: white; background-color: #d97706; }
+.courses { color: #ea580c; }
+.courses:hover { color: white; background-color: #ea580c; }
+.assignments { color: #2563eb; }
+.assignments:hover { color: white; background-color: #2563eb; }
+.announcements { color: #059669; }
+.announcements:hover { color: white; background-color: #059669; }
+.timetable { color: #dc2626; }
+.timetable:hover { color: white; background-color: #dc2626; }
+.contact { color: #475569; }
+.contact:hover { color: white; background-color: #475569; }
+
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+section {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    margin-bottom: 25px;
+    animation: fadeInUp 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.student-info-title {
+    color: #0d9488;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.profile-table {
+    margin: 0 auto 25px auto;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 650px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.profile-table th,
+.profile-table td {
+    padding: 16px 22px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+    transition: all 0.25s ease;
+}
+
+.profile-table tr:last-child th,
+.profile-table tr:last-child td {
+    border-bottom: none;
+}
+
+.profile-table th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: 700;
+    width: 35%;
+}
+
+.profile-table td {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.row-blue,
+.row-cyan {
+    background-color: #ffffff;
+}
+
+.profile-table tr:hover {
+    background-color: #f0fdf4;
+}
+
+.profile-actions {
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 11px 24px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-edit {
+    background: linear-gradient(135deg, #0d9488, #0f766e);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+}
+
+.btn-edit:hover {
+    background: linear-gradient(135deg, #0f766e, #115e59);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(13, 148, 136, 0.45);
+}
+
+.btn-save {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-save:hover {
+    background: linear-gradient(135deg, #059669, #047857);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(16, 185, 129, 0.45);
+}
+
+.btn-cancel {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.btn-cancel:hover {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(239, 68, 68, 0.45);
+}
+
+.profile-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #0d9488;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    outline: none;
+    background-color: #f0fdf4;
+}
+
+.profile-input:focus {
+    border-color: #0f766e;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.2);
+}
+
+footer {
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 35px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.profile-footer {
+    text-align: center;
+    color: #64748b;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .profile-title { font-size: 2rem; }
+    nav a { display: block; margin: 6px 0; }
+    section { padding: 25px 18px; }
+}
