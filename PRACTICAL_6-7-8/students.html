@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Directory - Practical 6 - StudentHub</title>
+    <link rel="stylesheet" href="students.css">
+</head>
+<body>
+<header>
+    <h1 class="students-title">Student Directory & Profiles</h1>
+    <p class="students-subtitle">Practical 6: Fetch API Dynamic Rendering with Search, Filter & Dependent Dropdowns</p>
+</header>
+<hr>
+<nav>
+    <a href="index.html" class="home">Home</a>
+    <a href="dashboard.html" class="dashboard">Dashboard</a>
+    <a href="profile.html" class="profile">Profile</a>
+    <a href="courses.html" class="courses">Courses</a>
+    <a href="events.html" class="events">Events (P6)</a>
+    <a href="students.html" class="students active">Students (P6)</a>
+    <a href="faqs.html" class="faqs">FAQs (P6)</a>
+    <a href="assignments.html" class="assignments">Assignments</a>
+    <a href="announcements.html" class="announcements">Announcements</a>
+    <a href="timetable.html" class="timetable">Timetable</a>
+    <a href="register.html" class="register">Register (P7)</a>
+    <a href="contact.html" class="contact">Contact (P7)</a>
+    <a href="view_records.php" class="records">View Records (P7)</a>
+</nav>
+<hr>
+<main>
+    <div id="cacheBanner" class="cache-banner">
+        <span class="cache-badge" id="cacheStatusText">Initializing Fetch API connection...</span>
+        <button id="refreshBtn" class="btn-refresh" title="Force refresh from external JSON">🔄 Sync Fresh Data</button>
+    </div>
+    <section class="controls-section">
+        <div class="search-bar-row">
+            <input type="text" id="searchInput" class="control-input" placeholder="🔍 Search students by name, enrollment (25DIT019), department, skills, or city..." aria-label="Search Students">
+        </div>
+        <div class="dependent-dropdowns-panel">
+            <div class="panel-header">
+                <span>🌐 Geographic Filter (Intermediate Extension: Country ➔ State ➔ City Dependent Dropdowns)</span>
+            </div>
+            <div class="dropdowns-grid">
+                <div>
+                    <label class="control-label" for="countryFilter">Country</label>
+                    <select id="countryFilter" class="control-select" aria-label="Filter by Country">
+                        <option value="all">All Countries</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="control-label" for="stateFilter">State / Province</label>
+                    <select id="stateFilter" class="control-select" disabled aria-label="Filter by State">
+                        <option value="all">All States</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="control-label" for="cityFilter">City / Town</label>
+                    <select id="cityFilter" class="control-select" disabled aria-label="Filter by City">
+                        <option value="all">All Cities</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="filters-grid-secondary">
+            <div>
+                <label class="control-label" for="deptFilter">Academic Department</label>
+                <select id="deptFilter" class="control-select" aria-label="Filter by Department">
+                    <option value="all">All Departments</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Computer Engineering">Computer Engineering</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="AI & ML">AI & ML</option>
+                    <option value="Data Science">Data Science</option>
+                </select>
+            </div>
+            <div>
+                <label class="control-label" for="sortSelect">Sort Profiles By</label>
+                <select id="sortSelect" class="control-select" aria-label="Sort Profiles">
+                    <option value="cgpa-desc">CGPA (High to Low)</option>
+                    <option value="cgpa-asc">CGPA (Low to High)</option>
+                    <option value="name-asc">Student Name (A - Z)</option>
+                    <option value="name-desc">Student Name (Z - A)</option>
+                    <option value="semester-desc">Semester (High to Low)</option>
+                </select>
+            </div>
+        </div>
+        <div style="text-align: right; margin-top: 12px;">
+            <button id="resetFiltersBtn" class="btn-refresh" style="padding: 6px 14px;">Reset All Filters</button>
+        </div>
+    </section>
+    <section class="results-meta">
+        <h2 id="totalCount" class="results-count">Loading profiles...</h2>
+        <div class="active-filters-badges">
+            <span class="filter-chip">Dataset: students.json (16 records)</span>
+            <span class="filter-chip">Dependent Cascading Filters</span>
+        </div>
+    </section>
+    <section id="studentsContainer" class="students-grid">
+        <div class="loading-box">
+            <div class="spinner"></div>
+            <h3>Fetching Student Profiles...</h3>
+            <p>Connecting to students.json via JavaScript Fetch API</p>
+        </div>
+    </section>
+    <section class="pagination-container">
+        <button id="prevBtn" class="btn-page" disabled>◀ Previous</button>
+        <div id="pageNumbers" class="page-numbers"></div>
+        <span id="pageInfo" class="page-info">Page 1 of 1</span>
+        <button id="nextBtn" class="btn-page" disabled>Next ▶</button>
+    </section>
+</main>
+<hr>
+<footer>
+    <p>2026 StudentHub Portal | Practical 6 - Student Directory with Dependent Dropdowns | Student: Parthrajsinh H. Gohil (25DIT019)</p>
+</footer>
+<script src="students.js"></script>
+</body>
+</html>

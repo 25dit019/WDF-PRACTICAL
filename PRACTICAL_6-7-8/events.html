@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events - Practical 6 - StudentHub</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+<header>
+    <h1 class="events-title">Campus Events & Technical Summits</h1>
+    <p class="events-subtitle">Practical 6: Dynamic External JSON Rendering via Fetch API with Search, Filter & Pagination</p>
+</header>
+<hr>
+<nav>
+    <a href="index.html" class="home">Home</a>
+    <a href="dashboard.html" class="dashboard">Dashboard</a>
+    <a href="profile.html" class="profile">Profile</a>
+    <a href="courses.html" class="courses">Courses</a>
+    <a href="events.html" class="events active">Events (P6)</a>
+    <a href="students.html" class="students">Students (P6)</a>
+    <a href="faqs.html" class="faqs">FAQs (P6)</a>
+    <a href="assignments.html" class="assignments">Assignments</a>
+    <a href="announcements.html" class="announcements">Announcements</a>
+    <a href="timetable.html" class="timetable">Timetable</a>
+    <a href="register.html" class="register">Register (P7)</a>
+    <a href="contact.html" class="contact">Contact (P7)</a>
+    <a href="view_records.php" class="records">View Records (P7)</a>
+</nav>
+<hr>
+<main>
+    <div id="cacheBanner" class="cache-banner">
+        <span class="cache-badge" id="cacheStatusText">Initializing Fetch API connection...</span>
+        <button id="refreshBtn" class="btn-refresh" title="Force refresh from external JSON">🔄 Sync Fresh Data</button>
+    </div>
+    <section class="controls-section">
+        <div class="controls-grid">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="control-input" placeholder="🔍 Search events by title, description, venue, organizer..." aria-label="Search Events">
+            </div>
+            <div class="filter-wrapper">
+                <select id="categoryFilter" class="control-select" aria-label="Filter by Category">
+                    <option value="all">All Categories</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Coding">Coding</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="Cultural">Cultural</option>
+                    <option value="Career">Career</option>
+                    <option value="Design">Design</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Community">Community</option>
+                </select>
+            </div>
+            <div class="sort-wrapper">
+                <select id="sortSelect" class="control-select" aria-label="Sort Events">
+                    <option value="date-asc">Date (Earliest First)</option>
+                    <option value="date-desc">Date (Latest First)</option>
+                    <option value="title-asc">Title (A - Z)</option>
+                    <option value="title-desc">Title (Z - A)</option>
+                    <option value="seats-desc">Available Seats (High - Low)</option>
+                    <option value="rating-desc">Rating (High - Low)</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <section class="results-meta">
+        <h2 id="totalCount" class="results-count">Loading events...</h2>
+        <div class="active-filters-badges">
+            <span class="filter-chip">Dataset: events.json</span>
+            <span class="filter-chip">Fetch API & LocalStorage</span>
+        </div>
+    </section>
+    <section id="eventsContainer" class="events-grid">
+        <div class="loading-box">
+            <div class="spinner"></div>
+            <h3>Fetching Events Catalog...</h3>
+            <p>Connecting to events.json via JavaScript Fetch API</p>
+        </div>
+    </section>
+    <section class="pagination-container">
+        <button id="prevBtn" class="btn-page" disabled>◀ Previous</button>
+        <div id="pageNumbers" class="page-numbers"></div>
+        <span id="pageInfo" class="page-info">Page 1 of 1</span>
+        <button id="nextBtn" class="btn-page" disabled>Next ▶</button>
+    </section>
+</main>
+<hr>
+<footer>
+    <p>2026 StudentHub Portal | Practical 6 - Fetch API Dynamic Rendering | Student: Parthrajsinh H. Gohil (25DIT019)</p>
+</footer>
+<script src="events.js"></script>
+</body>
+</html>

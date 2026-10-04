@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus FAQs - Practical 6 - StudentHub</title>
+    <link rel="stylesheet" href="faqs.css">
+</head>
+<body>
+<header>
+    <h1 class="faqs-title">Student Help & FAQs Knowledge Base</h1>
+    <p class="faqs-subtitle">Practical 6: Dynamic External JSON Rendering via Fetch API with Search, Filter & Pagination</p>
+</header>
+<hr>
+<nav>
+    <a href="index.html" class="home">Home</a>
+    <a href="dashboard.html" class="dashboard">Dashboard</a>
+    <a href="profile.html" class="profile">Profile</a>
+    <a href="courses.html" class="courses">Courses</a>
+    <a href="events.html" class="events">Events (P6)</a>
+    <a href="students.html" class="students">Students (P6)</a>
+    <a href="faqs.html" class="faqs active">FAQs (P6)</a>
+    <a href="assignments.html" class="assignments">Assignments</a>
+    <a href="announcements.html" class="announcements">Announcements</a>
+    <a href="timetable.html" class="timetable">Timetable</a>
+    <a href="register.html" class="register">Register (P7)</a>
+    <a href="contact.html" class="contact">Contact (P7)</a>
+    <a href="view_records.php" class="records">View Records (P7)</a>
+</nav>
+<hr>
+<main>
+    <div id="cacheBanner" class="cache-banner">
+        <span class="cache-badge" id="cacheStatusText">Initializing Fetch API connection...</span>
+        <button id="refreshBtn" class="btn-refresh" title="Force refresh from external JSON">🔄 Sync Fresh Data</button>
+    </div>
+    <section class="controls-section">
+        <div class="controls-grid">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="control-input" placeholder="🔍 Search FAQs by question, answer, or tags (e.g. fees, exams, fetch)..." aria-label="Search FAQs">
+            </div>
+            <div class="filter-wrapper">
+                <select id="categoryFilter" class="control-select" aria-label="Filter FAQs by Category">
+                    <option value="all">All Categories</option>
+                    <option value="Academics">Academics</option>
+                    <option value="Examinations">Examinations</option>
+                    <option value="Admissions">Admissions</option>
+                    <option value="Campus & Facilities">Campus & Facilities</option>
+                    <option value="Technical Support">Technical Support</option>
+                </select>
+            </div>
+            <div class="sort-wrapper">
+                <select id="sortSelect" class="control-select" aria-label="Sort FAQs">
+                    <option value="helpful-desc">Most Helpful First</option>
+                    <option value="question-asc">Question (A - Z)</option>
+                    <option value="question-desc">Question (Z - A)</option>
+                    <option value="date-desc">Recently Updated</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <section class="results-meta">
+        <h2 id="totalCount" class="results-count">Loading FAQs...</h2>
+        <div class="active-filters-badges">
+            <span class="filter-chip">Dataset: faqs.json (16 records)</span>
+            <span class="filter-chip">Interactive Accordion</span>
+        </div>
+    </section>
+    <section id="faqsContainer" class="faqs-container">
+        <div class="loading-box">
+            <div class="spinner"></div>
+            <h3>Loading FAQs Knowledge Base...</h3>
+            <p>Connecting to faqs.json via JavaScript Fetch API</p>
+        </div>
+    </section>
+    <section class="pagination-container">
+        <button id="prevBtn" class="btn-page" disabled>◀ Previous</button>
+        <div id="pageNumbers" class="page-numbers"></div>
+        <span id="pageInfo" class="page-info">Page 1 of 1</span>
+        <button id="nextBtn" class="btn-page" disabled>Next ▶</button>
+    </section>
+</main>
+<hr>
+<footer>
+    <p>2026 StudentHub Portal | Practical 6 - Interactive FAQs Knowledge Base | Student: Parthrajsinh H. Gohil (25DIT019)</p>
+</footer>
+<script src="faqs.js"></script>
+</body>
+</html>

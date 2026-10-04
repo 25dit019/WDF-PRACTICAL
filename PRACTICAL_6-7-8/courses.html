@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Courses - StudentHub</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+<header>
+    <h1 class="courses-title">
+        Available Courses & Programs
+    </h1>
+</header>
+<hr>
+<nav>
+    <a href="index.html" class="home">Home</a> |
+    <a href="dashboard.html" class="dashboard">Dashboard</a> |
+    <a href="profile.html" class="profile">Profile</a> |
+    <a href="courses.html" class="courses">Courses</a> |
+    <a href="events.html" class="events">Events (P6)</a> |
+    <a href="students.html" class="students">Students (P6)</a> |
+    <a href="faqs.html" class="faqs">FAQs (P6)</a> |
+    <a href="register.html" class="register">Register (P7)</a> |
+    <a href="contact.html" class="contact">Contact (P7)</a> |
+    <a href="view_records.php" class="records">View Records (P7)</a>
+</nav>
+<hr>
+<main>
+<section class="controls-section">
+    <div class="controls-container">
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" class="control-input" placeholder="Search by course name, code, instructor...">
+        </div>
+        <div class="filter-wrapper">
+            <select id="categoryFilter" class="control-select">
+                <option value="all">All Departments</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="AI & ML">AI & ML</option>
+                <option value="Data Science">Data Science</option>
+            </select>
+        </div>
+        <div class="sort-wrapper">
+            <select id="sortSelect" class="control-select">
+                <option value="name-asc">Sort by: Title (A-Z)</option>
+                <option value="name-desc">Sort by: Title (Z-A)</option>
+                <option value="credits-desc">Sort by: Credits (High-Low)</option>
+                <option value="rating-desc">Sort by: Rating (High-Low)</option>
+            </select>
+        </div>
+    </div>
+</section>
+<section class="display-section">
+    <div class="results-header">
+        <h2 id="totalCount">Showing Courses</h2>
+    </div>
+    <div id="coursesContainer" class="courses-grid">
+        <div class="loading-spinner">Loading course catalog via Fetch API...</div>
+    </div>
+    <div class="pagination-container">
+        <button id="prevBtn" class="btn-page">Prev</button>
+        <div id="pageNumbers" class="page-numbers"></div>
+        <span id="pageInfo" class="page-info">Page 1 of 1</span>
+        <button id="nextBtn" class="btn-page">Next</button>
+    </div>
+</section>
+</main>
+<hr>
+<footer>
+    <p class="courses-footer">
+        2026 StudentHub Portal | Course Catalog
+    </p>
+</footer>
+<script src="courses.js"></script>
+</body>
+</html>

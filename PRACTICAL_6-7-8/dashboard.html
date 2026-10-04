@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - StudentHub</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<header class="header-container">
+    <h1 class="dashboard-title">
+        Student Dashboard
+    </h1>
+    <div class="weather-card" id="weatherWidget">
+        <div class="weather-header">
+            <span class="weather-city">Location: Changa Campus</span>
+            <span class="weather-badge" id="weatherCondition">Fetching...</span>
+        </div>
+        <div class="weather-body">
+            <div class="weather-item">
+                <span class="weather-label">Temperature</span>
+                <span class="weather-value" id="weatherTemp">--°C</span>
+            </div>
+            <div class="weather-divider"></div>
+            <div class="weather-item">
+                <span class="weather-label">Humidity</span>
+                <span class="weather-value" id="weatherHumidity">--%</span>
+            </div>
+        </div>
+    </div>
+</header>
+<hr>
+<nav>
+    <a href="index.html" class="home">Home</a> |
+    <a href="dashboard.html" class="dashboard">Dashboard</a> |
+    <a href="profile.html" class="profile">Profile</a> |
+    <a href="courses.html" class="courses">Courses</a> |
+    <a href="events.html" class="events">Events (P6)</a> |
+    <a href="students.html" class="students">Students (P6)</a> |
+    <a href="faqs.html" class="faqs">FAQs (P6)</a> |
+    <a href="register.html" class="register">Register (P7)</a> |
+    <a href="contact.html" class="contact">Contact (P7)</a> |
+    <a href="view_records.php" class="records">View Records (P7)</a>
+</nav>
+<hr>
+<main>
+<section>
+<h2 class="dashboard-heading">
+    Overview & Practical Modules
+</h2>
+<ul class="dashboard-list">
+    <li><strong>Practical 6:</strong> Dynamic JSON Views with Fetch API (16 Events, 16 Student Profiles, 16 FAQs)</li>
+    <li><strong>Practical 6 Intermediate:</strong> Dependent Dropdowns (Country ➔ State ➔ City)</li>
+    <li><strong>Practical 6 Advanced:</strong> LocalStorage Offline Caching & Sync Badges</li>
+    <li><strong>Practical 7:</strong> PHP Server-Side Validation, POST Processing & CSRF Protection</li>
+    <li><strong>Practical 7 Storage:</strong> Safe Dual Writing to CSV & JSON with File Locks</li>
+    <li><strong>Practical 7 Intermediate:</strong> <a href="view_records.php" style="color: #2563eb; font-weight: 600;">Stored Records Viewer (view_records.php)</a></li>
+    <li>Total Enrolled Courses : 16 Available</li>
+    <li>Student Attendance : 90% | Enrolled as 25DIT019</li>
+</ul>
+</section>
+</main>
+<hr>
+<footer>
+    <p class="dashboard-footer">
+        2026 StudentHub Portal | Dashboard
+    </p>
+</footer>
+<script src="dashboard.js"></script>
+</body>
+</html>

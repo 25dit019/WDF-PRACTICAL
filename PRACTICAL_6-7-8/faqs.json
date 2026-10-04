@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "category": "Academics",
+    "question": "How do I calculate and convert my CGPA to percentage?",
+    "answer": "As per university academic regulations, the formula for converting CGPA to equivalent percentage is: Percentage (%) = (CGPA - 0.5) * 10. For instance, a CGPA of 9.0 converts to 85.0%.",
+    "tags": ["cgpa", "grading", "percentage", "academics"],
+    "helpful": 84,
+    "lastUpdated": "2026-08-15"
+  },
+  {
+    "id": 2,
+    "category": "Academics",
+    "question": "What is the minimum attendance criteria to be eligible for end-semester exams?",
+    "answer": "Students must maintain an aggregate minimum of 75% attendance across all registered courses. In medical emergencies supported by certified documentation, up to 10% relaxation may be granted by the Dean.",
+    "tags": ["attendance", "eligibility", "exams", "regulations"],
+    "helpful": 112,
+    "lastUpdated": "2026-08-20"
+  },
+  {
+    "id": 3,
+    "category": "Examinations",
+    "question": "When are mid-semester and university end-semester exams scheduled?",
+    "answer": "Mid-semester exams are generally conducted in the 8th week of the semester, while practical vivas and end-semester theory examinations take place during the 15th-17th weeks as published on the academic calendar.",
+    "tags": ["exams", "schedule", "timetable", "midsem"],
+    "helpful": 95,
+    "lastUpdated": "2026-09-01"
+  },
+  {
+    "id": 4,
+    "category": "Examinations",
+    "question": "How can I apply for re-assessment or re-checking of answer sheets?",
+    "answer": "Students can apply online through the StudentHub portal within 7 days of result declaration by paying the prescribed re-assessment fee of ₹250 per subject.",
+    "tags": ["reassessment", "rechecking", "results", "fees"],
+    "helpful": 67,
+    "lastUpdated": "2026-07-28"
+  },
+  {
+    "id": 5,
+    "category": "Admissions",
+    "question": "What is the procedure for semester registration and elective course selection?",
+    "answer": "Online course registration opens one week prior to each semester commencement. Log in to StudentHub, navigate to Courses > Elective Selection, verify prerequisites, and click Submit.",
+    "tags": ["registration", "electives", "courses", "portal"],
+    "helpful": 130,
+    "lastUpdated": "2026-08-10"
+  },
+  {
+    "id": 6,
+    "category": "Admissions",
+    "question": "How can I apply for fee concessions or government scholarships?",
+    "answer": "Eligible students can apply through the National Scholarship Portal (NSP) or Gujarat Digital Seva (MYSY/Digital Gujarat). The college Scholarship Verification Desk provides physical endorsement in Room 104.",
+    "tags": ["scholarship", "mysy", "financial-aid", "fees"],
+    "helpful": 154,
+    "lastUpdated": "2026-08-25"
+  },
+  {
+    "id": 7,
+    "category": "Campus & Facilities",
+    "question": "What are the central library working hours and book issuance rules?",
+    "answer": "The central library is open Monday to Saturday from 8:00 AM to 8:00 PM (extended to 10:00 PM during examination weeks). Undergraduates can borrow up to 4 books for a duration of 14 days.",
+    "tags": ["library", "timings", "books", "borrowing"],
+    "helpful": 78,
+    "lastUpdated": "2026-08-30"
+  },
+  {
+    "id": 8,
+    "category": "Campus & Facilities",
+    "question": "How do I access campus Wi-Fi network and register my laptop MAC address?",
+    "answer": "Connect to 'StudentHub-Secure' SSID and log in using your college email and enrollment password. To register extra devices, visit IT Support Helpdesk or submit your MAC address online.",
+    "tags": ["wifi", "internet", "mac-address", "network"],
+    "helpful": 142,
+    "lastUpdated": "2026-09-05"
+  },
+  {
+    "id": 9,
+    "category": "Technical Support",
+    "question": "How does the Fetch API work in our WDF web development practicals?",
+    "answer": "Fetch API is a modern Promise-based JavaScript interface for making asynchronous network HTTP requests. It uses fetch('data.json').then(res => res.json()).then(data => render(data)).catch(err => handleError(err)).",
+    "tags": ["fetch-api", "javascript", "practical-6", "ajax"],
+    "helpful": 180,
+    "lastUpdated": "2026-09-12"
+  },
+  {
+    "id": 10,
+    "category": "Technical Support",
+    "question": "How is offline localStorage caching implemented for dynamic JSON data?",
+    "answer": "On successful fetch, write response data to localStorage using localStorage.setItem(key, JSON.stringify(data)). In case of offline status or fetch error, read from localStorage.getItem(key) and parse JSON.",
+    "tags": ["localstorage", "offline-cache", "caching", "javascript"],
+    "helpful": 165,
+    "lastUpdated": "2026-09-15"
+  },
+  {
+    "id": 11,
+    "category": "Technical Support",
+    "question": "How are server-side validation and sanitization performed in PHP?",
+    "answer": "Input sanitization strips malicious characters using htmlspecialchars(), trim(), and stripslashes(). Server-side validation uses filter_var($email, FILTER_VALIDATE_EMAIL) and regex preg_match() before file storage.",
+    "tags": ["php", "validation", "sanitization", "practical-7"],
+    "helpful": 192,
+    "lastUpdated": "2026-09-18"
+  },
+  {
+    "id": 12,
+    "category": "Technical Support",
+    "question": "What is CSRF token validation and why is it important in PHP forms?",
+    "answer": "CSRF (Cross-Site Request Forgery) token is a secure random string stored in the server session and injected into hidden form fields. It ensures submissions originate from authentic users rather than unauthorized scripts.",
+    "tags": ["csrf", "security", "php", "sessions"],
+    "helpful": 148,
+    "lastUpdated": "2026-09-20"
+  },
+  {
+    "id": 13,
+    "category": "Campus & Facilities",
+    "question": "What hostel facilities and mess timings are available on campus?",
+    "answer": "Hostels provide 24/7 security, high-speed Wi-Fi, laundry service, and study lounges. Mess timings: Breakfast 7:30-9:00 AM, Lunch 12:00-2:00 PM, Evening Snacks 5:00-6:00 PM, and Dinner 7:30-9:30 PM.",
+    "tags": ["hostel", "mess", "food", "accommodation"],
+    "helpful": 62,
+    "lastUpdated": "2026-08-18"
+  },
+  {
+    "id": 14,
+    "category": "Academics",
+    "question": "How do I request a bonafide student certificate or college transcript?",
+    "answer": "Submit a request on StudentHub under Services > Document Request. Standard bonafide certificates are issued within 24 working hours, while official transcripts require 3 to 5 business days.",
+    "tags": ["bonafide", "transcript", "documents", "certificate"],
+    "helpful": 89,
+    "lastUpdated": "2026-09-02"
+  },
+  {
+    "id": 15,
+    "category": "Admissions",
+    "question": "Can I participate in summer internships during semester breaks?",
+    "answer": "Yes, mandatory summer internships of 4 to 6 weeks are credited in the curriculum after the 4th and 6th semesters. Pre-approvals and NOC must be obtained from the Training & Placement Cell.",
+    "tags": ["internships", "t&p", "noc", "credits"],
+    "helpful": 115,
+    "lastUpdated": "2026-09-10"
+  },
+  {
+    "id": 16,
+    "category": "Examinations",
+    "question": "What is the policy for supplementary or backlog examination attempts?",
+    "answer": "Students with grade 'FF' or 'NA' can register for remedial examinations held during the subsequent semester or vacation term. Maximum three continuous attempts are permitted per subject.",
+    "tags": ["remedial", "backlog", "supplementary", "grading"],
+    "helpful": 103,
+    "lastUpdated": "2026-08-22"
+  }
+]
